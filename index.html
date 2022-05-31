@@ -1,0 +1,375 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Bootstrap Font Icon CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <title>Myntra</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mynav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Myntra</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home & Living</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Beauty</a>
+                  </li>
+                <form class="d-flex mybox ms-1">
+                  <input class=" form-control me-2  " type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </ul>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <div class="icon_div">
+                    <a href="#">
+                        <img src="https://i.ibb.co/PM3sMV9/icons8-male-user-16.png" alt="icons8-male-user-16">
+                        <p>Profile</p>
+                    </a>
+                </div>
+                <div class="icon_div">
+                    <a href="#">
+                        <img src="https://i.ibb.co/QP89B7L/icons8-favorite-16.png" alt="icons8-favorite-16"/>
+                        <p>Wishlist</p>
+                    </a>
+                </div>
+                <div class="icon_div">
+                    <a href="#">
+                        <img src="https://i.ibb.co/bFk7wfd/icons8-handbag-16.png" alt="icons8-handbag-16" />
+                        <p>Bag</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+          <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.ibb.co/pW5JPGd/banner-2.jpg" alt="banner1" class="d-block  mycarousel w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ibb.co/gScZGhY/banner-img-3.jpg" alt="banner2" class="d-block  mycarousel w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ibb.co/rZ0kBtD/banner1.jpg" alt="banner3" class="d-block mycarousel w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<div id="quickSearch">
+    <div id= "quickSearchContainer">
+        <span id="quickheading">DEAL OF THE DAY</span>
+        <div class="main mymaindiv">
+            <!--First Card-->
+            <div class="card mycard" style="width: 10rem;">
+                <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                    <img src="https://i.ibb.co/tY93Gpd/dres.jpg" class="card-img-top myimgheight" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Dresses starting at &#8377 299</p>
+                    </div>
+                </a>  
+            </div>
+            <!--Second Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/txR94WR/shoewoman.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Footwear Min.50% Off</p>
+                </div>
+              </a>  
+            </div>
+             <!--Third Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/bBnT6Wp/kids-section.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Kids wear starting at &#8377 199</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fourth Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/4WXVqDK/men-section.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Men's Casual Min.30% Off</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fifth Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/D71ZVsq/Clothing.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Women's Casual at &#8377 399</p>
+                </div>
+              </a>  
+            </div>
+            <!--Sixth Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/nRQrBDF/under.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Best Of Lingerie 50-80% Off</p>
+                </div>
+              </a>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="quickSearch">
+    <div id= "quickSearchContainer">
+        <span id="quickheading">TOP PICK</span>
+        <!-- <span id="quickSubHeading">Discover resturant by Meal</span> -->
+        <div class="main mymaindiv">
+            <!--First Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/cTTdXfs/summer-combo.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Summer Dresses Under &#8377 799</p>
+                </div>
+              </a>  
+            </div>
+            <!--Second Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/Njrb8XC/small1.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Skirts & Tops Under &#8377 599</p>
+                </div>
+              </a>  
+            </div>
+             <!--Third Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/wdGJzjc/top-pick-men.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Men's Combo Under &#8377 999</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fourth Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/Y0CtgS6/baby-pick.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Kids wear Under &#8377 399</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fifth Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/Cw8WVpq/jeans-img.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Woman's Jeans Under &#8377 499</p>
+                </div>
+              </a>  
+            </div>
+            <!--Sixth Card-->
+            <div class="card mycard" style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/6PbHRch/bags.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Bags & Accessories Under &#8377 299 </p>
+                </div>
+              </a>  
+            </div>
+        </div>
+    </div>
+</div>
+<div id="quickSearch">
+    <div id= "quickSearchContainer">
+        <span id="quickheading">CATEGORIES TO BAG</span>
+        <!-- <span id="quickSubHeading">Discover resturant by Meal</span> -->
+        <div class="main mymaindiv">
+            <!--First Card-->
+            <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/5jPX4yC/bag-cat.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Bag</p>
+                </div>
+              </a>  
+            </div>
+            <!--Second Card-->
+            <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/kXhmS5z/beauty.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Beauty</p>
+                </div>
+              </a>  
+            </div>
+             <!--Third Card-->
+             <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/pRVMkCG/sareesmall.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Saree</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fourth Card-->
+             <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/jVj6039/trousers.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Trousers</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fifth Card-->
+             <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/W2HkP10/tshirts.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>T-Shirts</p>
+                </div>
+              </a>  
+            </div>
+            <!--Sixth Card-->
+            <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/pwNzXyV/sportsshoes.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Shoes</p>
+                </div>
+              </a>  
+            </div>
+        </div>
+    </div>
+</div>
+<div id="quickSearch">
+    <div id= "quickSearchContainer">
+        <span id="quickheading">LATEST IN BEAUTY & GROOMING</span>
+        <!-- <span id="quickSubHeading">Discover resturant by Meal</span> -->
+        <div class="main mymaindiv">
+            <!--First Card-->
+            <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/0j5P79y/Mens-Grooming-Products.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Men's Essential</p>
+                </div>
+              </a>  
+            </div>
+            <!--Second Card-->
+            <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/F6DjskL/perfume.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Perfumes</p>
+                </div>
+              </a>  
+            </div>
+             <!--Third Card-->
+             <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/zVL576D/skin-care.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Women's Beauty Products</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fourth Card-->
+             <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/L6jWpj7/tools.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Men's Trimmer Range</p>
+                </div>
+              </a>  
+            </div>
+             <!--Fifth Card-->
+             <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/9gSMQx2/mens-grooming.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Men's Products</p>
+                </div>
+              </a>  
+            </div>
+            <!--Sixth Card-->
+            <div class="card mycard " style="width: 10rem;">
+              <a href="../homepage/Deals_OF_The_Day/deals_page.html" target="_blank">
+                <img src="https://i.ibb.co/txPHhrZ/baby-grooming.jpg" class="card-img-top myimgheight" alt="...">
+                <div class="card-body">
+                  <p>Baby Care Products</p>
+                </div>
+              </a>  
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer Section-->
+<footer>
+    <p id="footerText">&copy; Chhavi Developer </p>
+    <div class="footDiv">
+        <h5>ONLINE SHOPPING</h5>
+        <p>Men</p>
+        <p>Women</p>
+        <p>Kids</p>
+        <p>Home & Living</p>
+        <p>Beauty</p>
+        <p>Gift Cards</p>
+        <p>Myntra Insider</p>
+
+    </div>
+    <div class="footDiv">
+      <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+        <p>
+          <img src="https://i.ibb.co/VtGK6Qk/google-play-badge.png" class="footer_img" alt="icons8-google-play-48">
+          <img src="apple_buttonw.png" class="apple_img" alt="icons8-google-play-48">
+        </p>
+        <h5>KEEP IN TOUCH</h5>
+        <p>
+          <img src="https://i.ibb.co/TBXTVYC/icons8-facebook-50.png" class="footer_icon" alt="icons8-facebook-50">
+          <img src="https://i.ibb.co/QjS1f9k/icons8-youtube-50.png" class="footer_icon" alt="icons8-youtube-50">
+          <img src="https://i.ibb.co/x1FHNj1/icons8-instagram-50.png" class="footer_icon" alt="icons8-instagram-50">
+        </p>
+    </div>
+    <div class="footDiv noBorder">
+        <p>Contact Us</p>
+        <p>About Us</p>
+    </div>
+</footer>
+    </body>    
+</html>

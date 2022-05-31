@@ -1,0 +1,96 @@
+.mynav{
+    height: 50px;
+}
+.mybtn{
+    height:20px
+}
+
+.mybox{
+    margin-top: 1%;
+    height:30px;
+    width: 500px;
+}
+.icon_div>img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+.mycarousel{
+    height:450px;
+    border: 2px black;
+}
+.icon_div{
+    margin-top:15px;
+    margin-left: 15px;
+    margin-right: 10px;
+
+}
+
+#quickSearchContainer{
+    display: inline-block;
+    /* height: 400px; */
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 2%;
+}
+#quickHeading{
+    display:block;     /* used so that both heading and subheading can come one below the other, not needed if we use <p>tag */
+    font-size:25px;
+    color: black;
+    font-weight: 10;
+    font-family:'Times New Roman', Times, serif;
+    margin-left:2%;
+    letter-spacing: 5px;
+}
+.mymaindiv{
+    margin-left: 5%;
+    border: 2px black;
+}
+.mycard{
+    height: 250px !important;
+    float: left;
+    margin-left: 1%;
+}
+.myimgheight{
+    height: 200px !important;
+}
+h5{
+    font-weight: 50px;
+    font-size: 15px;
+}
+footer{
+    margin-top:5%;
+    height:auto;
+    width:100%;
+    background-color:#f3dac6;
+}
+/* #footerText{
+    text-align: center;
+} */
+.footDiv{
+    height:400px;
+    background-color:#f3dac6;
+    width:33%;
+    float:left;
+    text-align: center;
+}
+.footer_img{
+    height:100px;
+    width:100px;
+}
+.apple_img{
+    height:30px;
+    width:100px;
+}
+.footer_icon{
+    height:30px;
+    width:30px;
+}
+.noBorder{
+    border:none 
+}
