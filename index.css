@@ -20,9 +20,12 @@ p{
     color: black;
     text-align: center;
 }
+.moon{
+    height:10px;
+    width: 10px;
+}
 .mycarousel{
     height:450px;
-    border: 2px black;
 }
 .icon_div{
     margin-top:15px;
@@ -49,7 +52,6 @@ p{
 }
 .mymaindiv{
     margin-left: 5%;
-    border: 2px black;
 }
 .mycard{
     height: 250px !important;

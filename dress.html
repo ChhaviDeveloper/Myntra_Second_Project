@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Bootstrap Font Icon CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <title>Dresses</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mynav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Myntra</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home & Living</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Beauty</a>
+                  </li>
+                <form class="d-flex mybox ms-1">
+                  <input class=" form-control me-2  " type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </ul>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <div class="icon_div">
+                    <a href="#">
+                        <img src="https://i.ibb.co/PM3sMV9/icons8-male-user-16.png" alt="icons8-male-user-16">
+                        <p>Profile</p>
+                    </a>
+                </div>
+                <div class="icon_div">
+                    <a href="#">
+                        <img src="https://i.ibb.co/QP89B7L/icons8-favorite-16.png" alt="icons8-favorite-16"/>
+                        <p>Wishlist</p>
+                    </a>
+                </div>
+                <div class="icon_div">
+                    <a href="#">
+                        <img src="https://i.ibb.co/bFk7wfd/icons8-handbag-16.png" alt="icons8-handbag-16" />
+                        <p>Bag</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <div class="filterdiv">
+                <h2>FILTERS</h2>
+                <div>
+                    <h4>SEARCH LOCATION</h4>
+                    <input type="text" placeholder="Search Location">
+                </div>
+                <div class="sortby">
+                    <h4>SORT BY</h4>
+                    <input type="radio" name ="filter">Popularity 
+                    <br>
+                    <input type="radio" name ="filter">Rating High to Low
+                    <br>
+                    <input type="radio" name ="filter">Delivery Time
+                    <br>
+                    <input type="radio" name ="filter">Cost : Low to High
+                    <br>
+                    <input type="radio" name ="filter">Cost : High to Low
+                    <br>
+                </div>
+                <div class="Cuisines">
+                    <h4>CUISINES</h4>
+                    <input type="checkbox">North Indian
+                    <br>
+                    <input type="checkbox">South Indian
+                    <br>
+                    <input type="checkbox">Chinese
+                    <br>
+                    <input type="checkbox">Bakery
+                    <br>
+                    <input type="checkbox">BBQ
+                    <br>
+                    <input type="checkbox">Fast Food
+                    <br>
+                    <input type="checkbox">Biryani
+                    <br>
+                    <input type="checkbox">Burger
+                    <br>
+                    <input type="checkbox">Salads
+                    <br>
+                    <input type="checkbox">Continental
+                    <br>
+                    <input type="checkbox">Dessert
+                    <br>
+                    <input type="checkbox">Pizza
+                    <br>
+                    <input type="checkbox">Drinks
+                    <br>
+                </div>
+                <div class="sortby">
+                    <h4>RATINGS</h4>
+                    <input type="radio">5 Stars
+                    <br>
+                    <input type="radio">4 Stars
+                    <br>
+                    <input type="radio">3 Stars
+                    <br>
+                </div>
+            </div>
+            <div class="contentdiv">
+                
+
+                <!-- First Dish Card Section-->
+                <div class="card mycard" style="width: 10rem;">
+                    <a href="deals_page.html" target="_blank">
+                        <img src="https://i.ibb.co/tY93Gpd/dres.jpg" class="card-img-top myimgheight" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Dresses starting at &#8377 299</p>
+                        </div>
+                    </a>  
+                </div>
+                <!-- Second Dish Card Section-->
+                <div class="dishdiv">
+                    <div class="dishesimg">
+                        <img src="../listing_page/images/cafe10.jpeg" alt="dishes"/>
+                    </div>
+                    <div class="text">
+                        <h1>Times Cafe </h1>
+                        <h2>Fathegunj, Vadodara</h2>
+                        <a href="../details_page/details.html" target = "_blank">
+                            <button type="button" class="myButton">Menu</button>
+                            <button type="button" class="myButton" >Reviews</button>
+                            <button type="button" class="myButton" >Locate on Map</button>
+                        </a>
+                    </div>
+                    <hr class="line"/>
+                    <div class="typeofCuisines">
+                        <h4>Cusinies:</h4>
+                        <h4>Cost For Two:</h4>
+                    </div>
+                    <div class="infodiv">
+                        <h5>Fast Food, Chinese, Desserts</h5>
+                        <h5>Rs.700</h5>
+                    </div>
+                </div>
+                <!-- Third Dish Card Section-->
+                <div class="dishdiv">
+                    <div class="dishesimg">
+                        <img src="../listing_page/images/cafe4.jpg" alt="dishes"/>
+                    </div>
+                    <div class="text">
+                        <h1>Barista</h1>
+                        <h2>Sayajigunj, Vadodara</h2>
+                        <a href="../details_page/details.html" target = "_blank">
+                            <button type="button" class="myButton">Menu</button>
+                            <button type="button" class="myButton" >Reviews</button>
+                            <button type="button" class="myButton" >Locate on Map</button>
+                        </a>
+                    </div>
+                    <hr class="line"/>
+                    <div class="typeofCuisines">
+                        <h4>Cusinies:</h4>
+                        <h4>Cost For Two:</h4>
+                    </div>
+                    <div class="infodiv">
+                        <h5>Fast Food, Coffee, Desserts, Pizza</h5>
+                        <h5>Rs.1000</h5>
+                    </div>
+                </div>
+                <!-- Fourth Dish Card Section-->
+                <div class="dishdiv">
+                    <div class="dishesimg">
+                        <img src="../listing_page/images/cafe7.jpg" alt="dishes"/>
+                    </div>
+                    <div class="text">
+                        <h1>South Indian Corner</h1>
+                        <h2>Akota, Vadodara</h2>
+                        <a href="../details_page/details.html" target = "_blank">
+                            <button type="button" class="myButton">Menu</button>
+                            <button type="button" class="myButton" >Reviews</button>
+                            <button type="button" class="myButton" >Locate on Map</button>
+                        </a>
+                    </div>
+                    <hr class="line"/>
+                    <div class="typeofCuisines">
+                        <h4>Cusinies:</h4>
+                        <h4>Cost For Two:</h4>
+                    </div>
+                    <div class="infodiv">
+                        <h5>South Indian</h5>
+                        <h5>Rs.500</h5>
+                    </div>
+                </div>
+                <!-- Fifth Dish Card Section-->
+                <div class="dishdiv">
+                    <div class="dishesimg">
+                        <img src="../listing_page/images/cafe5.jpg" alt="dishes"/>
+                    </div>
+                    <div class="text">
+                        <h1>Lazzate Nayab</h1>
+                        <h2>Atladara, Vadodara</h2>
+                        <a href="../details_page/details.html" target = "_blank">
+                            <button type="button" class="myButton">Menu</button>
+                            <button type="button" class="myButton" >Reviews</button>
+                            <button type="button" class="myButton" >Locate on Map</button>
+                        </a>
+                    </div>
+                    <hr/>
+                    <div class="typeofCuisines">
+                        <h4>Cusinies:</h4>
+                        <h4>Cost For Two:</h4>
+                    </div>
+                    <div class="infodiv">
+                        <h5>Fast Food, North Indian, Biryani, Mughalai</h5>
+                        <h5>Rs.450</h5>
+                    </div>
+                </div>
+                <div class="showmore">
+                    <button class="showmorebutton">Show More</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
