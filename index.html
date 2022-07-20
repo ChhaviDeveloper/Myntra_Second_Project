@@ -7,16 +7,19 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="index.css" rel="stylesheet" type="text/css">
         <title>Myntra</title>
+        <link rel ="icon" href="https://i.ibb.co/T2nsQ6B/M.png" >
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+        <script src ="cat_home.js"></script>
+        <!--Modal show-->
       <script>
 	      $(document).ready(function(){
 		     $("#myModal").modal('show');
       	});
       </script>
+      <!--Dark mode style-->
         <style>
           body{
             background-color: white;
@@ -28,6 +31,7 @@
             
           }
         </style>
+        <!--Script for dark mode-->
         <script>
           function changeMode(){
             let mybody = document.body;
@@ -36,8 +40,8 @@
         </script>
       </head>
     <body>
-      <!-- for Coupon script-->
-      <div id="myModal" class="modal fade">
+    <!-- for Coupon script-->
+    <div id="myModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -52,9 +56,12 @@
             </div>
         </div>
     </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mynav">
+    <!--Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mynav">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Myntra</a>
+              <a class="navbar-brand myntra_logo" href="#">
+                <img src="https://i.ibb.co/T2nsQ6B/M.png" alt="M">
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -85,12 +92,11 @@
         <p id="out"></p>
         <p id="weatherOut"></p> -->
         
-                <div class="icon_div noBorder">
-                  <button onclick="changeMode()">
-                    <a href="#">
-                      <img src="https://i.ibb.co/RBctbx1/icons8-moon-symbol-30.png" alt="icons8-moon-symbol-30">
-                   </a>
-                  </button>
+                <!-- <div class="toggle_button"> -->
+                  <!-- <button class="toggle_button" onclick="changeMode()">Dark Mode</button> -->
+                <!-- </div> -->
+                <div class="toggle_button">
+                  <button onclick="changeMode()" class="btn btn-dark">Dark Mode</button>
                 </div>
                   <div class="icon_div">
                     <a href="#">
@@ -111,8 +117,8 @@
                     </a>
                 </div>
             </div>
-        </nav>
-<div>
+    </nav>
+    <!--Weather Forecast-->
     <div class = "container1">
       <main id ="app-container">
         <p>You are currently accessing this page from </p>
@@ -132,6 +138,8 @@
     </main>
     <script src="geo.js"></script>
     </div>
+
+     <!-- Carousel -->
     <div id="demo" class="carousel slide container2" data-bs-ride="carousel">
 
 <!-- Indicators/dots -->
@@ -162,11 +170,18 @@
 <span class="carousel-control-next-icon"></span>
 </button>
     </div>
-</div>
-          <!-- Carousel -->
-  
-
-<div id="quickSearch">
+    <!--Dynamic Dropdown -->
+    <div class="dropdown">
+            
+            <select id ="jcat" class="category" onchange="getRest()">
+                <option>----Choose Your Category----</option>
+            </select>
+            <select class="restSelect">
+                <option>----Choose Your Product----</option>
+            </select>
+    </div>
+    <!--Quick Search Cards-->
+    <div id="quickSearch">
     <div id= "quickSearchContainer">
         <span id="quickheading">DEAL OF THE DAY</span>
         <div class="main mymaindiv">
@@ -226,12 +241,11 @@
             </div>
         </div>
     </div>
-</div>
-
-<div id="quickSearch">
+    </div>
+    <!--Top Pick Cards-->
+    <div id="quickSearch">
     <div id= "quickSearchContainer">
         <span id="quickheading">TOP PICK</span>
-        <!-- <span id="quickSubHeading">Discover resturant by Meal</span> -->
         <div class="main mymaindiv">
             <!--First Card-->
             <div class="card mycard" style="width: 10rem;">
@@ -289,8 +303,9 @@
             </div>
         </div>
     </div>
-</div>
-<div id="quickSearch">
+    </div>
+    <!--Categories To Bag Cards-->
+    <div id="quickSearch">
     <div id= "quickSearchContainer">
         <span id="quickheading">CATEGORIES TO BAG</span>
         <!-- <span id="quickSubHeading">Discover resturant by Meal</span> -->
@@ -351,8 +366,9 @@
             </div>
         </div>
     </div>
-</div>
-<div id="quickSearch">
+    </div>
+    <!--Last Card Container-->
+    <div id="quickSearch">
     <div id= "quickSearchContainer">
         <span id="quickheading">LATEST IN BEAUTY & GROOMING</span>
         <!-- <span id="quickSubHeading">Discover resturant by Meal</span> -->
@@ -413,9 +429,9 @@
             </div>
         </div>
     </div>
-</div>
-<!--Footer Section-->
-<footer>
+    </div>
+    <!--Footer Section-->
+    <footer>
     <p id="footerText">&copy; Chhavi Developer </p>
     <div class="footDiv">
         <h5>ONLINE SHOPPING</h5>
@@ -445,6 +461,10 @@
         <p>Contact Us</p>
         <p>About Us</p>
     </div>
-</footer>
+    </footer>
+    <!--Onload Script dynamic dropdown-->
+    <script>
+  window.onload = getCategory()
+    </script>
     </body>    
 </html>

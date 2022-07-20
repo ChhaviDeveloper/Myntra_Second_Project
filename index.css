@@ -1,6 +1,4 @@
-
 *{
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -65,7 +63,11 @@ main{
     height: 60px !important;
     width:60px !important;
 }
+.myntra_logo>img{
 
+    height: 50px;
+    width: 50px;
+}
 /* .myweatherforecast{
     height: 20px;
     width : 100%;
@@ -85,11 +87,6 @@ main{
     height:30px;
     width: 500px;
 }
-.icon_div>img{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 p{
     font-size: 12px;
     color: black;
@@ -105,10 +102,44 @@ p{
     float:left;
     margin-top: 5px;
 }
+.toggle_button{
+    /* background-color: #183856; */
+    border-radius: 5px;
+    margin-top: 5%;
+}
 .icon_div{
     margin-top:15px;
     margin-left: 15px;
     margin-right: 10px;
+}
+.dropdownheading{
+    height:50px;
+    width: 100%;
+}
+.dropdown{
+    display: block;
+    height:100px;
+    width:98%;
+    margin-top:5%;
+    position:absolute;
+}
+.category{
+    width: 30%;
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 2%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+}
+.restSelect{
+    width:30%;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 2%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #quickSearchContainer{
@@ -116,10 +147,10 @@ p{
     /* height: 400px; */
     width: 90%;
     margin-left: 50px;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 #quickHeading{
-    display:block;     /* used so that both heading and subheading can come one below the other, not needed if we use <p>tag */
+    /* display:block;     used so that both heading and subheading can come one below the other, not needed if we use <p>tag */
     font-size:25px;
     color: black;
     font-weight: 10;
